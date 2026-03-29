@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{                                /*设置网页背景*/
+            background-image: url(图片/背景2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            }
+        .container{                          /*让盒子模型在网页中间*/
+            display: flex;
+            gap: 250px;
+            justify-content: center;
+        }
+        .big{width: 835px;height: auto;}    /*使学校和大表哥图片变大*/
+        .big2{
+            width: 1650px;height: auto;  /*使个人兴趣中的图片变大*/
+            display: block;margin-left: auto;margin-right: auto;/*让图片居中*/
+        }
+        .RT{                                /*让文字出现在图片右边的顶部*/
+            display: flex;
+            align-items: flex-start;
+            gap: 80px;
+        }
+       .BT1{
+        border: 8px solid red;         /*设置主标题盒子模型属性*/
+        border-radius: 50px; 
+        width: 360px; 
+        height: 320x;
+        line-height: 320px;
+        text-align: center;
+        margin-top: 40px;   
+        background-image: url(图片/盒1.jpg); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        }
+        .BT2{
+         border: 8px solid red;
+         border-radius: 50px; 
+        width: 360px; 
+        height: 320x;
+        line-height: 320px;
+        text-align: center;
+        margin-top: 40px;  
+        background-image: url(图片/盒2.jpg); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        }
+        .BT3{
+             border: 8px solid red;
+             border-radius: 50px; 
+        width: 360px; 
+        height: 320x;
+        line-height: 320px;
+        text-align: center;
+        margin-top: 40px;  
+        background-image: url(图片/盒3.jpg); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        }
+        h5{font-size: 70px;font-family: "微软雅黑";}
+        h4{font-size: 35px;font-family: "宋体";color: red;}
+        h2{font-size: 100px;font-family: "微软雅黑";}
+        h1{text-align: center;font-size: 40px;}
+        p{font-size: 30px; font-family: "宋体";}
+        strong{color: rgb(255, 96, 244);}
+        h3{font-size: 40px; font-family: "宋体";color: red;}
+        .KO{text-indent: 1em;}        /*空一格*/
+        a{ text-decoration: none;color: black; transition: all 0.2s ease;}     /*设置超链接样式*/ 
+        h5:hover{
+            color: rgb(255, 102, 0);
+        } 
+        hr{                                      /*设置分割线样式*/
+        height: 5px;
+        border: none;
+        background-color: red;
+        width: 100%;
+        margin:20px auto;
+        }
+        .Red{                                     /*设置跳转链接样式*/
+            color: red;
+            text-align: right;
+            border-style: solid;
+            border-radius: 50px;
+            margin-left: 1400px;
+            text-align: center;
+            background-color: rgb(243, 248, 169);
+            }
+        .link{text-decoration: none; 
+            color: black;
+            font-family: "宋体";
+            font-size: 30px;
+        }
+        .link:hover{                              /*鼠标悬停高亮*/
+            color:rgb(255, 102, 0)
+        }
+
+    </style>
+</head>
+<body>
+    <p id="home"></p>
+    <br>
+    <h2 align="center">自我介绍</h2>
+    <div class="container">
+    <a href="#one"><h5 class="BT1" title="点击跳转">个人信息</h5></a>
+    <a href="#two"><h5 class="BT2" title="点击跳转">个人兴趣</h5></a>
+    <a href="#three"><h5 class="BT3" title="点击跳转">游戏推荐</h5></a>
+   </div>
+   <h4 align="right">————注：点击图片可跳转至对应界面</h4>
+   <br><br>
+   <br><br><br><br><br><br><br><br>
+   <hr>
+   <br><br><br><br><br><p id="one"></p><br><br><br><br><br>
+   <h1>个人信息</h1>
+   <p class="RT">
+    <img class="big"  src="图片/校门.jpg" alt="华南农业大学珠江学院" title="华南农业大学珠江学院正门口">
+    所处大学：华南农业大学珠江学院
+    <br><br>
+    学院:国际传播学院
+    <br><br>
+    专业：网络与新媒体
+    <br><br>
+    班级:网络与新媒体250x班
+    <br><br>
+    姓名:黄X韬
+    <br><br>
+    学号:202xxx130xxx
+   </p>
+   <br><br>
+   <div class="Red">
+   <a href="#home" class="link">点击回到主页</a>
+   </div>
+   <br>
+   <div class="Red">
+   <a href="#two" class="link">点击跳转至下一章</a>
+   </div>
+   <br><br><br><br><br><br><br><br><br><br><br><br>
+   <hr>
+   <br><br><br><br><br><br><br><br><br><p id="two"></p><br><br><br>
+   <h1>个人兴趣</h1>
+   <h3 class="KO" align="center">喜欢玩各种类型的游戏<strong>（恐怖除外）</strong></h3>
+   <a href="https://df.qq.com/main.shtml" target="_blank">
+   <img class="big2" src="图片/三角洲.png" alt="三角洲行动" title="点击下载">
+   </a>
+   <a href="https://repo-game.com/zh" target="_blank">
+   <img class="big2" src="图片/REPO.png" alt="REPO" title="点击下载">
+   </a>
+   <a href="https://www.kerbalspaceprogram.com/" target="_blank">
+   <img class="big2" src="图片/坎巴拉.png" alt="坎巴拉" title="点击下载">
+   </a>
+   <h3 class="KO" align="center">以及各种<strong>猫</strong></h3>
+   <img class="big2" src="图片/猫.jpg" alt="猫">
+   <img class="big2" src="图片/猫2.jpg" alt="猫">
+   <img class="big2" src="图片/猫3.jpg" alt="猫">
+   <br><br><br><br>
+   <div class="Red">
+   <a href="#home" class="link">点击回到主页</a>
+   </div>
+   <br>
+   <div class="Red">
+   <a href="#three" class="link">点击跳转至下一章</a>
+   </div>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <hr>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <h1>游戏推荐</h1>
+   <p class="RT">
+    <a href="https://www.rockstargames.com/zh/reddeadredemption2" target="_blank">
+    <img class="big" src="图片/大表哥.png" alt="荒野大镖客2" title="点击下载">
+    </a>
+    &emsp;&emsp;《荒野大镖客2》是Rockstar Games打造的开放世界游戏巅峰，以1899年美国西部为背景，讲述范德林德帮从巅峰走向衰落的史诗，主角亚瑟·摩根的命运与时代变迁交织，剧情深度与情感共鸣极强。
+    <br>&emsp;&emsp;这款游戏不仅是“开放世界”的标杆，更是“用游戏讲述故事”的典范，适合所有喜欢深度剧情、追求沉浸感的玩家。正如IGN所说：“它是当代最伟大的游戏之一，达到了此前游戏未有的高度。”
+    </p>
+    <div class="Red">
+   <a href="#home" class="link">点击回到主页</a>
+   </div>
+    <br><br><br><br><br><br>
+    <p id="three"></p>
+</body>
+</html>
